@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/dir">
+
+    <TextView
+        android:id="@+id/app_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+       android:gravity="center"
+        android:background="#ECF4F4"
+        android:text="SIR MVIT CAMPUS NAVIGATOR"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_head"
+        android:layout_marginTop="80dp"
+        android:text="Select a source"
+        android:background="#ECE7E4"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/Source"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#85C8CCDA"
+        android:layout_below="@id/app_head"
+        android:layout_marginTop="130dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp"
+        tools:ignore="DuplicateIds"
+        />
+
+
+    <TextView
+        android:id="@+id/dest_text"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Source"
+        android:layout_marginTop="60dp"
+        android:background="#ECE7E4"
+        android:text="Select a destination"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="#85C8CCDA"
+        android:layout_below="@id/dest_text"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="DuplicateIds" />
+
+
+    <Button
+        android:id="@+id/findroute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Route"
+        android:layout_below="@id/destination"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="55dp"/>
+
+
+
+</RelativeLayout>
